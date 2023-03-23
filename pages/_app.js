@@ -1,5 +1,92 @@
-import '../styles/globals.css'
+import Head from "next/head";
+import Router from "next/router";
+import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
+import { Provider } from "react-redux";
+import NProgress from "nprogress";
+import TagManager from "react-gtm-module";
+import { ChakraProvider } from "@chakra-ui/react";
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+import Layout from "../layouts";
+import { useStore } from "../store";
+import * as ga from "../lib/ga";
+import "../styles/globals.css";
+import "../styles/animate.css";
+import "../styles/layout.css";
+import "../styles/tailwind.css";
+import "../styles/components/button.css";
+import "../styles/components/dropdown.css";
+import "../styles/components/forms.css";
+import "../styles/components/modals.css";
+import "../styles/components/navbar.css";
+import "../styles/components/nprogress.css";
+import "../styles/components/skeleton.css";
+import "../styles/components/table.css";
+
+import LandingSection from "../components/landingSection";
+
+Router.events.on("routeChangeStart", () => NProgress.start());
+Router.events.on("routeChangeComplete", () => NProgress.done());
+Router.events.on("routeChangeError", () => NProgress.done());
+
+export default ({ Component, pageProps }) => {
+  const router = useRouter();
+
+  const store = useStore(pageProps.initialReduxState);
+
+  const [rendered, setRendered] = useState(false);
+  const [initiated, setInitiated] = useState(null);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const handleRouteChange = (url) => ga.pageview(url);
+
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () => router.events.off("routeChangeComplete", handleRouteChange);
+  }, [router.events]);
+
+  useEffect(() => {
+    setRendered(true);
+  }, []);
+
+  useEffect(() => {
+    if (process.env.NEXT_PUBLIC_GTM_ID && rendered && !initiated) {
+      TagManager.initialize({ gtmId: process.env.NEXT_PUBLIC_GTM_ID });
+      setInitiated(true);
+    }
+  }, [rendered, initiated]);
+
+  useEffect(() => {
+    setLoading(false);
+  }, []);
+
+  return (
+    <>
+      <Head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta charSet="utf-8" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="shortcut icon" href="/favicon.png" />
+        <meta name="msapplication-TileColor" content="#050707" />
+        <meta
+          name="msapplication-TileImage"
+          content="/icons/mstile-150x150.png"
+        />
+        <meta name="theme-color" content="#050707" />
+      </Head>
+      <ChakraProvider>
+        <Provider store={store}>
+          <Layout>
+            <div id="portal" />
+            <div id="modal-chains" />
+            <div id="modal-assets" />
+            {!loading ? <Component {...pageProps} /> : <LandingSection />}
+          </Layout>
+        </Provider>
+      </ChakraProvider>
+    </>
+  );
+};

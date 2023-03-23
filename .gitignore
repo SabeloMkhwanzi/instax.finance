@@ -11,9 +11,15 @@
 # next.js
 /.next/
 /out/
+/.swc
+
 
 # production
 /build
+package-lock.json
+package copy.json
+yarn.lock
+*.zip*
 
 # misc
 .DS_Store
@@ -26,7 +32,14 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # local env files
+.env
+.env.production
+.env.staging
 .env*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # vercel
 .vercel
