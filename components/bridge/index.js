@@ -29,7 +29,7 @@ import Copy from "../copy";
 import DecimalsFormat from "../decimals-format";
 import Faucet from "../faucet";
 import Image from "../image";
-import LatestTransfers from "../latest-Transfers";
+import LatestTransfers from "../Latest-Transfers";
 import SelectAsset from "../select/asset";
 import SelectChain from "../select/chain";
 import TimeSpent from "../time-spent";
