@@ -1,4 +1,4 @@
-/** @type {import('next').NextConfig} */
+// /** @type {import('next').NextConfig} */
 // const nextConfig = {
 //   reactStrictMode: true,
 //   webpack: (config, { isServer }) => {
@@ -17,7 +17,7 @@
 //   },
 // };
 
-module.exports = nextConfig;
+// module.exports = nextConfig;
 
 const { createSecureHeaders } = require("next-secure-headers");
 
