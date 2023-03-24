@@ -29,7 +29,7 @@ import Copy from "../copy";
 import DecimalsFormat from "../decimals-format";
 import Faucet from "../faucet";
 import Image from "../image";
-import LatestTransfers from "../latest-transfers";
+import LatestTransfers from "../latest-Transfers";
 import SelectAsset from "../select/asset";
 import SelectChain from "../select/chain";
 import TimeSpent from "../time-spent";
@@ -2084,7 +2084,6 @@ export default () => {
                               </span>
                             </div>
                             <SelectChain
-                             
                               disabled={disabled}
                               value={source_chain}
                               onSelect={(c) => {
@@ -2150,7 +2149,6 @@ export default () => {
                               </span>
                             </div>
                             <SelectChain
-                               
                               disabled={disabled}
                               value={destination_chain}
                               onSelect={(c) => {
@@ -2697,7 +2695,7 @@ export default () => {
                                                       e.target.blur()
                                                     }
                                                     onKeyDown={(e) =>
-                                                      ["e", "E", "-"].includes(  
+                                                      ["e", "E", "-"].includes(
                                                         e.key
                                                       ) && e.preventDefault()
                                                     }
@@ -3362,28 +3360,27 @@ export default () => {
               </div>
             )}
           </div>
-           {process.env.NEXT_PUBLIC_EXPLORER_URL && (
-        <div className="flex flex-wrap items-center mx-5 ml-4 space-x-1 text-xs">
-          <a
-            href={process.env.NEXT_PUBLIC_EXPLORER_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center space-x-1"
-          >
-            <span className="font-medium text-slate-400 dark:text-slate-500">
-              Built with
-            </span>
-            <span className="font-bold text-green-500 dark:text-white">
-              Connext Protocol SDK v1.0.3-alpha.0
-            </span>
-          </a>
-        </div>
-      )}
+          {process.env.NEXT_PUBLIC_EXPLORER_URL && (
+            <div className="flex flex-wrap items-center mx-5 ml-4 space-x-1 text-xs">
+              <a
+                href={process.env.NEXT_PUBLIC_EXPLORER_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-1"
+              >
+                <span className="font-medium text-slate-400 dark:text-slate-500">
+                  Built with
+                </span>
+                <span className="font-bold text-green-500 dark:text-white">
+                  Connext Protocol SDK v1.0.3-alpha.0
+                </span>
+              </a>
+            </div>
+          )}
           {!openTransferStatus && _source_contract_data?.mintable && (
             <Faucet tokenId={asset} contractData={_source_contract_data} />
           )}
         </div>
-        
       </div>
       <div
         className={`col-span-1 ${
@@ -3396,7 +3393,6 @@ export default () => {
           onUpdateSize={(size) => setLatestTransfersSize(size)}
         />
       </div>
-     
     </div>
   );
 };
