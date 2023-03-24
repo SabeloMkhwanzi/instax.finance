@@ -186,7 +186,7 @@ export default function landingSection() {
           </Box>
         </Box>
       </Container>
-      <Container mx="-1.7%">
+      <Container id="about" mx="-1.7%">
         <PillPity
           borderTopWidth={0.5}
           borderTopColor="#012604"
@@ -199,7 +199,7 @@ export default function landingSection() {
           <PlatformSection />
         </PillPity>
       </Container>
-      <Container mx="-1.7%">
+      <Container id="technologies" mx="-1.7%">
         <Box
           borderTopWidth={0.5}
           borderTopColor="#012604"
@@ -209,7 +209,7 @@ export default function landingSection() {
           <ProjectStackSection />
         </Box>
       </Container>
-      <Container mx="-1.7%">
+      <Container id="team" mx="-1.7%">
         <PillPity
           borderTopWidth={0.5}
           borderTopColor="#012604"

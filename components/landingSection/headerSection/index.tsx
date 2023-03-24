@@ -71,7 +71,7 @@ export default function HeaderSection() {
               >
                 <Link
                   style={{ color: "inherit", textDecoration: "inherit" }}
-                  href="/"
+                  href="#about"
                 >
                   <Text
                     letterSpacing={1}
@@ -90,7 +90,7 @@ export default function HeaderSection() {
                 />
                 <Link
                   style={{ color: "inherit", textDecoration: "inherit" }}
-                  href="/"
+                  href="#technologies"
                 >
                   <Text
                     letterSpacing={1}
@@ -109,7 +109,7 @@ export default function HeaderSection() {
                 />
                 <Link
                   style={{ color: "inherit", textDecoration: "inherit" }}
-                  href="/"
+                  href="#team"
                 >
                   <Text
                     letterSpacing={1}
@@ -128,7 +128,8 @@ export default function HeaderSection() {
                 />
                 <Link
                   style={{ color: "inherit", textDecoration: "inherit" }}
-                  href="/"
+                  href="/https://github.com/SabeloMkhwanzi/instax.finance"
+                  target="_blank"
                 >
                   <Text
                     letterSpacing={1}

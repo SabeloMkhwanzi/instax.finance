@@ -20,7 +20,7 @@ const khand = Khand({ weight: "400", preload: false });
 
 export default function PlatformSection() {
   return (
-    <Container maxW={"4xl"}>
+    <Container id="About" maxW={"4xl"}>
       <Stack
         align={"center"}
         spacing={{ base: 8, md: 10 }}
@@ -51,7 +51,7 @@ export default function PlatformSection() {
                 color="white"
                 className={petrona.className}
               >
-                Tender App
+                Instax App
               </Text>
             </Badge>
 
@@ -93,7 +93,7 @@ export default function PlatformSection() {
           <Center>
             <Link
               style={{ color: "inherit", textDecoration: "inherit" }}
-              href="/"
+              href="/swap"
             >
               <Button
                 borderColor="#14f094"

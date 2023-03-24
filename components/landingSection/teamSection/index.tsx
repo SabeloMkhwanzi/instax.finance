@@ -17,7 +17,7 @@ const khand = Khand({ weight: "400", preload: false });
 
 export default function TeamSection() {
   return (
-    <Center py={6}>
+    <Center id="team" py={6}>
       <Stack mb={16} flex={1} spacing={{ base: 2, md: 10 }}>
         <Heading
           lineHeight={1.1}

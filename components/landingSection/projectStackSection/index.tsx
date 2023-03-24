@@ -27,7 +27,7 @@ const styles = {
 
 export default function ProjectStackSection() {
   return (
-    <Container maxW={"4xl"}>
+    <Container id="technologies" maxW={"4xl"}>
       <Stack flex={1} spacing={{ base: 2, md: 10 }}>
         <Heading
           lineHeight={1.1}
@@ -84,7 +84,7 @@ export default function ProjectStackSection() {
         >
           <Image
             mx={4}
-            alt="instax.fi-3"
+            alt="gnosis chain"
             width={200}
             height={70}
             src={"https://thegraph.com/images/landing/networks/gnosis.svg"}
@@ -92,14 +92,14 @@ export default function ProjectStackSection() {
 
           <Image
             mx={4}
-            alt="instax.fi-3"
+            alt="polygon chain"
             width={200}
             height={70}
             src={"https://thegraph.com/images/landing/networks/polygon.svg"}
           />
           <Image
             mx={4}
-            alt="instax.fi-3"
+            alt="optimism chain"
             width={200}
             height={70}
             src={"https://thegraph.com/images/landing/networks/optimism.svg"}
@@ -107,7 +107,7 @@ export default function ProjectStackSection() {
 
           <Image
             mx={4}
-            alt="instax.fi-3"
+            alt="ethereum chain"
             width={200}
             height={70}
             src={"https://thegraph.com/images/landing/networks/ethereum.svg"}
@@ -118,7 +118,7 @@ export default function ProjectStackSection() {
             color="white"
             mx={4}
             src="https://scroll.io/static/media/logo_with_text.7c6cafcac81093d6f83b.png"
-            alt="instax.fi-3"
+            alt="scroll Protocol"
             width={200}
             height={70}
           />
@@ -127,7 +127,7 @@ export default function ProjectStackSection() {
             style={styles.img}
             color="white"
             mx={4}
-            alt="instax.fi-3"
+            alt="the Graph Protocol"
             width={200}
             height={70}
             src={
@@ -139,7 +139,7 @@ export default function ProjectStackSection() {
             style={styles.img}
             color="white"
             mx={4}
-            alt="instax.fi-3"
+            alt=" Push Protocol"
             width={200}
             height={70}
             src={
@@ -153,12 +153,12 @@ export default function ProjectStackSection() {
             color="white"
             mx={4}
             src="https://lever-client-logos.s3.us-west-2.amazonaws.com/c3aed10b-b4d5-4c63-bf10-ab3393157986-1629391519811.png"
-            alt="instax.fi-3"
+            alt="Connext Protocol"
             width={200}
             height={70}
           />
 
-          <Image
+          {/* <Image
             className="img"
             style={styles.img}
             color="white"
@@ -167,7 +167,7 @@ export default function ProjectStackSection() {
             alt="instax.fi-3"
             width={200}
             height={70}
-          />
+          /> */}
         </Flex>
       </Stack>
     </Container>

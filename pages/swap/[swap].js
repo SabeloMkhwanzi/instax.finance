@@ -4,8 +4,6 @@ import _ from "lodash";
 import Swap from "../../components/swap";
 import meta from "../../lib/meta";
 import { getChains, getAssets } from "../../lib/api/config";
-import Footersection from "../../components/landingSection/footersection";
-import Navbar from "../../components/navbar";
 
 export async function getStaticPaths() {
   const chains = getChains().map((c) => c?.id);
