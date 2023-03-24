@@ -128,7 +128,7 @@ export default function HeaderSection() {
                 />
                 <Link
                   style={{ color: "inherit", textDecoration: "inherit" }}
-                  href="/https://github.com/SabeloMkhwanzi/instax.finance"
+                  href="https://github.com/SabeloMkhwanzi/instax.finance"
                   target="_blank"
                 >
                   <Text
