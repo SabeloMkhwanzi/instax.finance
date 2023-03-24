@@ -1388,7 +1388,7 @@ export default ({ pool, userPoolsData, onFinish }) => {
 
   return (
     <div className="order-1 space-y-3 lg:order-2">
-      <div className="px-4 pt-4 pb-5 space-y-3 border bg-slate-50 dark:bg-slate-900 rounded-xl dark:border-slate-800">
+      <div className="px-4 pt-4 pb-5 space-y-3 border bg-slate-50 dark:bg-slate-900 rounded-xl dark:border-slate-750">
         <div className="flex items-center justify-between space-x-2">
           <span className="text-lg font-semibold">Manage Balance</span>
           <GasPrice chainId={chain_id} iconSize={16} className="text-xs" />

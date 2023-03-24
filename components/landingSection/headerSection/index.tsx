@@ -175,7 +175,7 @@ export default function HeaderSection() {
             <Stack as={"nav"} spacing={7}>
               <Link
                 style={{ color: "inherit", textDecoration: "inherit" }}
-                href="/"
+                href="#about"
               >
                 <Text
                   letterSpacing={1}
@@ -189,7 +189,7 @@ export default function HeaderSection() {
               </Link>
               <Link
                 style={{ color: "inherit", textDecoration: "inherit" }}
-                href="/"
+                href="#technologies"
               >
                 <Text
                   letterSpacing={1}
@@ -203,7 +203,7 @@ export default function HeaderSection() {
               </Link>
               <Link
                 style={{ color: "inherit", textDecoration: "inherit" }}
-                href="/"
+                href="#team"
               >
                 <Text
                   letterSpacing={1}
@@ -217,7 +217,7 @@ export default function HeaderSection() {
               </Link>
               <Link
                 style={{ color: "inherit", textDecoration: "inherit" }}
-                href="/"
+                href="https://github.com/SabeloMkhwanzi/instax.finance"
               >
                 <Text
                   letterSpacing={1}
@@ -232,7 +232,7 @@ export default function HeaderSection() {
               <Center>
                 <Link
                   style={{ color: "inherit", textDecoration: "inherit" }}
-                  href="/"
+                  href="/swap"
                 >
                   <Button
                     borderColor="#14f094"

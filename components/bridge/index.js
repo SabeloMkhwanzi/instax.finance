@@ -1967,7 +1967,7 @@ export default () => {
                   )}
                 {chains_data && assets_data && (
                   <div
-                    className="px-4 pt-5 pb-6 space-y-8 bg-white border dark:bg-slate-900 rounded-2xl dark:border-slate-700 sm:pt-6 sm:pb-7 sm:px-6"
+                    className="px-4 pt-5 pb-6 space-y-8 bg-white border dark:bg-slate-900 rounded-2xl dark:border-slate-750 sm:pt-6 sm:pb-7 sm:px-6"
                     style={
                       checkSupport() && boxShadow
                         ? {

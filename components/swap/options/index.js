@@ -55,7 +55,7 @@ export default ({
         <div
           className={`bg-slate-100 rounded-xl hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700  flex items-center ${
             applied
-              ? "text-green-400 hover:text-green-500 dark:text-green-500 dark:hover:text-green-400"
+              ? "text-green-400 rounded-xl hover:text-green-500 dark:text-green-500 dark:hover:text-green-400"
               : "text-slate-600 hover:text-slate-700 dark:text-slate-300 dark:hover:text-slate-200"
           } space-x-1 py-2 px-2`}
         >
@@ -65,7 +65,7 @@ export default ({
       buttonClassName={`min-w-max ${
         disabled ? "cursor-not-allowed" : ""
       } rounded ${
-        applied ? "border border-blue-400 dark:border-blue-500" : ""
+        applied ? "border border-green-400 dark:border-green-500" : ""
       } flex items-center justify-center`}
       title={<span className="normal-case">Advanced options</span>}
       body={
@@ -159,7 +159,7 @@ export default ({
                         [name]: e.target.value,
                       });
                     }}
-                    className="border-0 rounded form-textarea focus:ring-0"
+                    className="rounded-xl form-textarea focus:ring-0"
                   />
                 ) : type === "number" ? (
                   <div className="flex items-center space-x-3">

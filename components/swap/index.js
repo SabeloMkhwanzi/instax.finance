@@ -1236,7 +1236,7 @@ export default () => {
         <div className="flex flex-col items-center justify-center mx-1 my-4 space-y-6 sm:space-y-6 sm:my-6 sm:mx-4">
           <div className="w-full max-w-md space-y-3">
             <div
-              className="px-4 pt-5 pb-6 space-y-8 bg-white border dark:bg-slate-900 rounded-2xl dark:border-slate-700 sm:pt-6 sm:pb-7 sm:px-6"
+              className="px-4 pt-5 pb-6 space-y-8 bg-white border dark:bg-slate-900 rounded-2xl dark:border-slate-750 sm:pt-6 sm:pb-7 sm:px-6"
               style={
                 chain && boxShadow
                   ? {

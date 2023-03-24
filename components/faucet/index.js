@@ -353,7 +353,7 @@ export default ({
       <div
         className={
           className ||
-          "w-full max-w-md bg-white dark:bg-slate-900 rounded-2xl border dark:border-slate-800 flex flex-col items-center justify-center space-y-2 mx-auto p-3 sm:p-6"
+          "w-full max-w-md bg-white dark:bg-slate-900 rounded-2xl border dark:border-slate-750 flex flex-col items-center justify-center space-y-2 mx-auto p-3 sm:p-6"
         }
       >
         <button

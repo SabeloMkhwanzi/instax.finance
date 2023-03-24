@@ -164,7 +164,7 @@ export default () => {
               <h1 className="text-xl font-semibold tracking-tighter sm:text-5xl">
                 Add liquidity to earn rewards.
               </h1>
-              <div className="flex items-center border-1 dark:border-slate-700">
+              <div className="flex items-center border-1 dark:border-slate-750">
                 {VIEWS.map((v, i) => (
                   <div
                     key={i}

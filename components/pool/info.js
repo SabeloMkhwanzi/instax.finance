@@ -159,7 +159,7 @@ export default ({ pool, userPoolsData, disabled = false, onSelect }) => {
     };
 
   const metricClassName =
-    "bg-slate-50 dark:bg-slate-900 bg-opacity-60 dark:bg-opacity-60 rounded-xl border dark:border-slate-800 flex flex-col space-y-12 py-5 px-4";
+    "bg-slate-50 dark:bg-slate-900 bg-opacity-60 dark:bg-opacity-60 rounded-xl border dark:border-slate-750 flex flex-col space-y-12 py-5 px-4";
   const titleClassName =
     "text-slate-400 dark:text-slate-200 text-base font-medium";
   const valueClassName = "text-lg sm:text-3xl font-semibold";
@@ -170,7 +170,7 @@ export default ({ pool, userPoolsData, disabled = false, onSelect }) => {
   } 0px 32px 128px 64px`;
 
   return (
-    <div className="bg-transparent rounded-xl sm:min-h-full">
+    <div className="bg-transparent dark:border-slate-750 rounded-xl sm:min-h-full">
       <div className="space-y-6">
         <div className="space-y-0">
           <div
