@@ -13,7 +13,7 @@ import {
 } from "recharts";
 import { TailSpin } from "react-loader-spinner";
 
-import DecimalsFormat from "../Decimals-format";
+import DecimalsFormat from "../decimals-format";
 import Image from "../image";
 import { currency_symbol } from "../../lib/object/currency";
 import { toArray, equalsIgnoreCase, loaderColor } from "../../lib/utils";
