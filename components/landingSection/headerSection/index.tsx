@@ -88,7 +88,7 @@ export default function HeaderSection() {
                   variant="solid"
                   orientation="vertical"
                 />
-                <Link
+                {/* <Link
                   style={{ color: "inherit", textDecoration: "inherit" }}
                   href="#technologies"
                 >
@@ -120,7 +120,7 @@ export default function HeaderSection() {
                   >
                     Team
                   </Text>
-                </Link>
+                </Link> */}
                 <Divider
                   colorScheme="whiteAlpha"
                   variant="solid"

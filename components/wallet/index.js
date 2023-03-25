@@ -38,6 +38,8 @@ const providerOptions = {
         421613: "https://goerli-rollup.arbitrum.io/rpc",
         4002: "https://rpc.ankr.com/fantom_testnet",
         1287: "https://rpc.api.moonbase.moonbeam.network",
+        534353: "https://alpha-rpc.scroll.io/l2",
+        420: "https://rpc.public.zkevm-test.net",
       },
     },
   },
@@ -75,6 +77,8 @@ const getNetwork = (chain_id) => {
     97: "binance-testnet",
     43113: "avalanche-fuji-testnet",
     80001: "mumbai",
+    534352: "scroll",
+    534353: "scrollAlpha",
   }[chain_id];
 };
 

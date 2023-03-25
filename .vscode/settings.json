@@ -2,11 +2,15 @@
   "cSpell.words": [
     "Footersection",
     "Instax",
+    "Intstax",
     "khand",
     "Khand",
+    "Notifiction",
     "petrona",
     "Petrona",
     "prata",
-    "Prata"
-  ]
+    "Prata",
+    "restapi"
+  ],
+  "git.ignoreLimitWarning": true
 }

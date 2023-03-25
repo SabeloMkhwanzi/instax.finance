@@ -65,14 +65,14 @@ export default function ProjectStackSection() {
             //lineHeight={1}
             fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}
           >
-            Valued Hackathon Sponsors
+            Hackathon Sponsors
           </Text>
         </Heading>
       </Stack>
       <Stack
-        align={"center"}
-        spacing={{ base: 8, md: 10 }}
-        py={{ base: 10, md: 12 }}
+        // align={"center"}
+
+        py={{ base: 3, md: 6 }}
         direction={["column", "row"]}
       >
         <Flex
@@ -83,46 +83,47 @@ export default function ProjectStackSection() {
           //w={"full"}
         >
           <Image
-            mx={4}
+            mx={1}
             alt="gnosis chain"
-            width={200}
-            height={70}
+            width={20}
+            height={10}
             src={"https://thegraph.com/images/landing/networks/gnosis.svg"}
           />
 
           <Image
-            mx={4}
+            boxSize="5px"
+            mx={1}
             alt="polygon chain"
-            width={200}
-            height={70}
+            width={20}
+            height={10}
             src={"https://thegraph.com/images/landing/networks/polygon.svg"}
           />
           <Image
-            mx={4}
+            mx={1}
             alt="optimism chain"
-            width={200}
-            height={70}
+            width={20}
+            height={10}
             src={"https://thegraph.com/images/landing/networks/optimism.svg"}
           />
 
           <Image
-            mx={4}
+            mx={1}
             alt="ethereum chain"
-            width={200}
-            height={70}
+            width={20}
+            height={10}
             src={"https://thegraph.com/images/landing/networks/ethereum.svg"}
           />
           <Image
             className="img"
             style={styles.img}
             color="white"
-            mx={4}
+            mx={1}
             src="https://scroll.io/static/media/logo_with_text.7c6cafcac81093d6f83b.png"
             alt="scroll Protocol"
-            width={200}
-            height={70}
+            width={20}
+            height={10}
           />
-          <Image
+          {/* <Image
             className="img"
             style={styles.img}
             color="white"
@@ -133,15 +134,15 @@ export default function ProjectStackSection() {
             src={
               "https://seeklogo.com/images/T/the-graph-grt-logo-B6802F6411-seeklogo.com.png"
             }
-          />
+          /> */}
           <Image
             className="img"
             style={styles.img}
             color="white"
-            mx={4}
+            mx={1}
             alt=" Push Protocol"
-            width={200}
-            height={70}
+            width={20}
+            height={10}
             src={
               "https://cdn-images-1.medium.com/max/470/1*Q9Sp33ZEP120iVD25eV3OA@2x.png"
             }
@@ -151,11 +152,11 @@ export default function ProjectStackSection() {
             className="img"
             style={styles.img}
             color="white"
-            mx={4}
+            mx={1}
             src="https://lever-client-logos.s3.us-west-2.amazonaws.com/c3aed10b-b4d5-4c63-bf10-ab3393157986-1629391519811.png"
             alt="Connext Protocol"
-            width={200}
-            height={70}
+            width={20}
+            height={10}
           />
 
           {/* <Image

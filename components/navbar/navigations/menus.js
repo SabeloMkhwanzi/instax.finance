@@ -1,15 +1,5 @@
 export default [
   {
-    id: "lending",
-    title: "Lending",
-    path: "#",
-  },
-  // {
-  //   id: "borrowing",
-  //   title: "borrowing",
-  //   path: "/borrowing",
-  // },
-  {
     id: "swap",
     title: "Swap",
     path: "/swap",
@@ -34,8 +24,8 @@ export default [
     external: true,
   },
   {
-    id: "push alert",
-    title: "Push Alert",
-    path: "#",
+    id: "push Subscribe",
+    title: "Push Subscribe",
+    path: "/push",
   },
 ];

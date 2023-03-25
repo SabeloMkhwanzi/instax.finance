@@ -75,7 +75,7 @@ export default function PlatformSection() {
               as={"span"}
               color="#14f094"
             >
-              Lending, Borrowing, Bridging, Swaps.
+              Provide, earn yield, Bridge, Swaps.
             </Text>
           </Heading>
           <Text
@@ -127,15 +127,15 @@ export default function PlatformSection() {
             rounded={"2xl"}
             width={"full"}
             overflow={"hidden"}
-            borderWidth={2}
-            borderColor="#14f094"
-            boxShadow={
-              "0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)"
-            }
+            //borderWidth={2}
+            //borderColor="#14f094"
+            // boxShadow={
+            //   "0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)"
+            // }
           >
             <Image
-              borderWidth={5}
-              borderColor="gray.500"
+              //borderWidth={5}
+              //borderColor="gray.500"
               alt={"Hero Image"}
               fit={"cover"}
               align={"center"}

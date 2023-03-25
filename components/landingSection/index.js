@@ -134,14 +134,14 @@ export default function landingSection() {
                   fontSize={useBreakpointValue({ base: "xs", md: "xl" })}
                   letterSpacing={2}
                 >
-                  Building the next best generation zkEVM Borrowing, Bridge,
+                  Building the next best generation zk-rollups Yield, Bridge,
                   Stableswap experience.
                 </Text>
 
                 <Stack direction={"row"}>
                   <Link
                     style={{ color: "inherit", textDecoration: "inherit" }}
-                    href="/"
+                    href="/pools"
                   >
                     <Button
                       color="#000000"
@@ -155,13 +155,13 @@ export default function landingSection() {
                         fontWeight="extrabold"
                         className={khand.className}
                       >
-                        BORROW
+                        Supply
                       </Text>
                     </Button>
                   </Link>
                   <Link
                     style={{ color: "inherit", textDecoration: "inherit" }}
-                    href="/"
+                    href="/pools"
                   >
                     <Button
                       borderColor="#14f094"
@@ -176,7 +176,7 @@ export default function landingSection() {
                         fontWeight="extrabold"
                         className={khand.className}
                       >
-                        LEND
+                        Earn
                       </Text>
                     </Button>
                   </Link>
@@ -199,7 +199,7 @@ export default function landingSection() {
           <PlatformSection />
         </PillPity>
       </Container>
-      <Container id="technologies" mx="-1.7%">
+      {/* <Container id="technologies" mx="-1.7%">
         <Box
           borderTopWidth={0.5}
           borderTopColor="#012604"
@@ -208,8 +208,8 @@ export default function landingSection() {
         >
           <ProjectStackSection />
         </Box>
-      </Container>
-      <Container id="team" mx="-1.7%">
+      </Container> */}
+      {/* <Container id="team" mx="-1.7%">
         <PillPity
           borderTopWidth={0.5}
           borderTopColor="#012604"
@@ -221,7 +221,7 @@ export default function landingSection() {
         >
           <TeamSection />
         </PillPity>
-      </Container>
+      </Container> */}
       {/* <Container mx="-1.7%">
         <Box
           borderTopWidth={0.5}
