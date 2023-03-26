@@ -1,7 +1,7 @@
 
 <h1 align="center">
    <b>
-        <a href="https://bubble-streamr.vercel.app/" target="_blank" ><img src="" /></a><br>
+        <a href="https://bubble-streamr.vercel.app/" target="_blank" ><img src="https://github.com/SabeloMkhwanzi/instax.finance/blob/main/public/instax.fi-3.png" /></a><br>
     </b>
 </h1>
 
